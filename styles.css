@@ -1,0 +1,220 @@
+img {
+    width: 30%;
+    height: auto;
+}
+
+/* Espace entre les boutons dans les "cachets" (dropdown-content) */
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* espace vertical entre les boutons */
+}
+.logo {
+    width: 178px;
+    height: 132px;
+    margin: 15px 0 0 0;
+}
+header{
+    box-shadow: #969696 0px 0px 25px;
+    position: sticky !important;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    background: #fff;
+}
+.container{
+    color: #969696;
+    margin : 100px 0 75px 150px;
+    max-width:1000px;
+    padding:0 16px;
+}
+body {
+    font-family: Helvetica;
+    margin: 0;
+}
+.head{
+    margin: 0 0 0 135px;
+}
+footer {
+    background-color: #2a2a2a;
+    padding: 10px 0;
+    position: relative;
+}
+.information-footer{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 115%;
+  color: white;
+  padding: 20px 40px 70px 150px;
+}
+.img1 {
+    display: inline-block;
+    width: 17%;
+    height: auto; 
+    padding-top: 20px;
+    margin-right: 20px;
+}
+.img2 {
+    display: inline-block;
+    width: 18%;
+    height: auto; 
+    padding-top: 20px;
+    margin-left: 20px;
+}
+footer .liens a,footer .liens a:visited {
+    color: #fff;
+    text-decoration: none;
+    font-size: 80%;
+    margin: 50px 0 0 0;
+}
+footer .liens a:hover,footer .liens a:focus {
+    color: #fff;
+    text-decoration: none;
+    margin: 50px 0 0 0;
+}
+#copyright {
+   font-size: 80%; 
+   color: #ffffff; 
+   margin: 0 800px 40px 150px;
+}
+#jimdo {
+    font-size: 80%;
+    color: #fff;
+    position: absolute; 
+    right: 140px;        
+    bottom: 23px;
+    margin: 0;
+    z-index: 1000;
+    text-decoration: none;
+}
+header .dropbtn {
+    position: relative;
+    transform: translateY(-40px);
+    transition: transform 150ms ease, color 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+.dropdown { 
+    position: relative;
+    display: inline-block;
+    border:none;
+}
+.dropbtn {
+    font-family: Helvetica;
+    padding: 25px 10px;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+    color: #404040;
+    background-color: #fff;
+    text-align: left;
+    font-size: 16px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    border:none;
+}
+.dropbtn:hover {
+    background: #fff;
+    color: #969696;
+}
+.dropdown-content {
+    box-shadow: #969696 0px 0px 25px;
+    font-family: Calibri;
+    background: #ffffff;
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    padding: 6px;
+    z-index: 50;
+}
+.dropdown-content button {
+    color: #404040;
+    font-size: 15px;
+    letter-spacing: 2px;
+    background: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    box-shadow: #000000 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content button {
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+
+.dropdown-content button:hover {
+    color: #969696;
+}
+header .dropdown-content {
+    top: calc(100% - 50px) !important;
+}
+header .dropdown-content button {
+    padding: 6px 12px;
+}
+.slider {
+  width: 100%;
+  height: 400px; /* adapte à ton bandeau */
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+/* Slide visible */
+.slide.active {
+  opacity: 1;
+}
+
+.slider-breadcrumb {
+  position: absolute;
+  bottom: 20px;    /* coin inférieur gauche */
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* gris semi-transparent */
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;  /* similaire à la police du site */
+  font-size: 0.9rem;
+}
+
+.slider-breadcrumb-link {
+  color: white;
+  text-decoration: none;
+}
+.bandeau {
+    left: 0;
+    bottom: 186px;
+    padding: 3px 10px 3px 180px;
+    position: absolute;
+    background-color: #969696;
+    font-family: Arial, sans-serif;
+    font-size: 1,3rem;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+.liens a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1,3rem;
+    gap: 30px;
+}
